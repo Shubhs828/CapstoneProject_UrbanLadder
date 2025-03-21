@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Cucumber Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Cucumber Tests(failed)">
+    <classes>
+      <class name="com.urbanladder.Runner.SearchRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.urbanladder.Runner.SearchRunner -->
+      <class name="com.urbanladder.Runner.ProductDetailsRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.urbanladder.Runner.ProductDetailsRunner -->
+      <class name="com.urbanladder.Runner.UserAuthenticationRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0 1 2 3 4 5"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.urbanladder.Runner.UserAuthenticationRunner -->
+    </classes>
+  </test> <!-- Cucumber Tests(failed) -->
+</suite> <!-- Failed suite [Cucumber Suite] -->

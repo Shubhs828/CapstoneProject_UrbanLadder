@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: com.urbanladder.Runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 83.904 s <<< FAILURE! - in com.urbanladder.Runner.TestRunner
+runScenario(com.urbanladder.Runner.TestRunner)  Time elapsed: 1.794 s  <<< FAILURE!
+java.lang.AssertionError: Login failed! Incorrect email or password.
+
+runScenario(com.urbanladder.Runner.TestRunner)  Time elapsed: 1.682 s  <<< FAILURE!
+java.lang.AssertionError: Login failed! Incorrect email or password.
+
+runScenario(com.urbanladder.Runner.TestRunner)  Time elapsed: 1.744 s  <<< FAILURE!
+java.lang.AssertionError: Login failed! Incorrect email or password.
+
+runScenario(com.urbanladder.Runner.TestRunner)  Time elapsed: 14.656 s  <<< FAILURE!
+java.lang.AssertionError: Taran Teak Wood Sofa is NOT in the wishlist
+
+runScenario(com.urbanladder.Runner.TestRunner)  Time elapsed: 31.438 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+

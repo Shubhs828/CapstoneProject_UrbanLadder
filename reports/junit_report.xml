@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="72.325" tests="8" skipped="0" failures="0" errors="0">
+<testcase classname="Home Page Validation" name="Verify Home Page Elements" time="0.183">
+<system-out><![CDATA[
+Given I navigate to the UrbanLadder home page...............................passed
+Then Top Offers section should be displayed.................................passed
+And Recommended for You section should be displayed.........................passed
+And Search bar should be functional.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Registration,Account Settings and Login" name="User Registration (Sign Up) - #1.1" time="5.232">
+<system-out><![CDATA[
+Given I navigate to the Sign Up link under profile icon.....................passed
+When I enter "sample1356767@demo.com" and "Hello@135" for registration......passed
+And I click on the Sign Up button...........................................passed
+Then the user should be successfully logged in..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Registration,Account Settings and Login" name="Edit Account Settings - Change Password - #1.1" time="3.405">
+<system-out><![CDATA[
+Given I navigate to the profile under profile icon..........................passed
+And I clicks on edit button.................................................passed
+And I enter my name in "Shubham"............................................passed
+And I enter my mobile number to "7805546051"................................passed
+And I click on the Change Password option...................................passed
+And I update my password to "Lock@135" and confirm it as "Lock@135".........passed
+And I click on the Update button............................................passed
+Then I get "Account updated" message as success.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Registration,Account Settings and Login" name="Login with different credentials - #1.1" time="1.383">
+<system-out><![CDATA[
+Given I am on the login page................................................passed
+When I enter email "sample1356767@demo.com" and password "Lock@135".........passed
+And I click on the Login button.............................................passed
+Then I should see "<message>"...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Registration,Account Settings and Login" name="Login with different credentials - #1.2" time="10.712">
+<system-out><![CDATA[
+Given I am on the login page................................................passed
+When I enter email "test86@test.com" and password "Lock@135"................passed
+And I click on the Login button.............................................passed
+Then I should see "<message>"...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search and Filter Functionality on Urban Ladder" name="Search and filter products - #1.1" time="2.232">
+<system-out><![CDATA[
+When I search for "sofa"....................................................passed
+Then I should see search results for "sofa".................................passed
+When I navigate to "Recommended" dropdown...................................passed
+And I select "New Arrivals".................................................passed
+Then I should see the products sorted by New Arrivals.......................passed
+When I navigate to the price filter dropdown................................passed
+And I select the price option "₹53,081-₹104,560"............................passed
+Then I should see the filter applied successfully...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Product Details Page Validation and Interaction" name="End-to-End Product Selection, Validation, Wishlist, and Cart Addition" time="15.939">
+<system-out><![CDATA[
+When I find and click on "Taran Teak Wood Sofa".............................passed
+Then I validate the product title...........................................passed
+And I check if "Taran Teak Wood Sofa" is sold out...........................passed
+Then I validate the product description.....................................passed
+And I validate the product price............................................passed
+When I click on the wishlist icon...........................................passed
+And I navigate to the wishlist page.........................................passed
+Then I validate that "Taran Teak Wood Sofa" is added to the wishlist........passed
+And I click on the product from the wishlist................................passed
+When I click on the "Add to Cart" button....................................passed
+Then I validate that "Taran Teak Wood Sofa" is added to the cart............passed
+]]></system-out>
+</testcase>
+<testcase classname="Shopping Cart functionality" name="Add items to cart, update quantity, remove item, and proceed to checkout" time="28.439">
+<system-out><![CDATA[
+Given I am on the shopping cart page........................................passed
+When I update the quantity of the product to "2"............................passed
+Then the quantity should be updated in the cart.............................passed
+When I remove the product from the cart.....................................passed
+Then the cart should be empty...............................................passed
+When I navigate to the Wishlist page........................................passed
+And I select a product from the Wishlist....................................passed
+And I add the product to the cart again.....................................passed
+And I click on the checkout button..........................................passed
+Then the message Product Purchased should be displayed......................passed
+]]></system-out>
+</testcase>
+</testsuite>
