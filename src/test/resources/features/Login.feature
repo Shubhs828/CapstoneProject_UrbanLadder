@@ -13,7 +13,7 @@ Feature: User Registration,Account Settings and Login
 
     Examples:
       | email                  | password  |
-      |sample1356789@demo.com      |  Hello@135 |
+      |7rhlx@indigobook.com      |  Hello@135 |
    
       
       
@@ -30,7 +30,7 @@ Feature: User Registration,Account Settings and Login
 
     Examples:
       | email                | password      | new_name   | new_mobile  | new_password      | confirm_password  |
-      |  sample1356789@demo.com  | Hello@135     | Shubham    | 7805546051  | Lock@135          | Lock@135         |      
+      |  7rhlx@indigobook.com  | Hello@135     | Shubham    | 7805546051  | Lock@135          | Lock@135         |      
       
       
 
@@ -43,7 +43,7 @@ Feature: User Registration,Account Settings and Login
 
     Examples:
       | email                | password      |
-      | sample1356789@demo.com   | Lock@135     |
+      | 7rhlx@indigobook.com   | Lock@135     |
       | test86@test.com      | Lock@135      |
 
       
